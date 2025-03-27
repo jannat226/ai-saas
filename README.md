@@ -38,3 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ###USING CLERK ->
 ###Using daisyUI
+
+used clerk for sign up and prisma and neon for db connection
+http://localhost:3000/api/videos->postman initially []
+
+uploading video and image using cloudinary
