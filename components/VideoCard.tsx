@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useCallback} from 'react'
+import Image from 'next/image'; // Import Image from next/image
 import {getCldImageUrl, getCldVideoUrl} from "next-cloudinary"
 import { Download, Clock, FileDown, FileUp } from "lucide-react";
 import dayjs from 'dayjs';
@@ -94,10 +95,12 @@ const  VideoCard: React.FC<VideoCardProps> = ({video, onDownload}) => {
                 />
               )
             ) : (
-              <img
-                src={getThumbnailUrl(video.publicId)}
-                alt={video.title}
-                className="w-full h-full object-cover"
+              <Image
+                src={getThumbnailUrl(video.publicId)} 
+                alt={video.title} 
+                className="w-full h-full object-cover" 
+                width={500} // Define the width (adjust as needed)
+                height={300} // Define the height (adjust as needed)
               />
             )}
             <div className="absolute bottom-2 right-2 bg-base-100 bg-opacity-70 px-2 py-1 rounded-lg text-sm flex items-center">

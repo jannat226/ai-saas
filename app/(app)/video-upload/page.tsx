@@ -32,15 +32,16 @@ function VideoUpload() {
         formData.append("originalSize", file.size.toString());
 
         try {
-            const response = await axios.post("/api/video-upload", formData)
-            // check for 200 response
-            router.push("/")
-        } catch (error) {
-            console.log(error)
-            // notification for failure
-        } finally{
-            setIsUploading(false)
-        }
+          await axios.post("/api/video-upload", formData)
+          // Check for 200 response or success, then navigate
+          router.push("/")
+      } catch (error) {
+          console.log(error)
+          // Notification for failure
+      } finally {
+          setIsUploading(false)
+      }
+      
 
     }
 
