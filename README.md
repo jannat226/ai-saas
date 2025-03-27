@@ -1,45 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Compression Project using Cloudinary
 
-## Getting Started
+This project leverages **Cloudinary** to upload, compress, and transform video files. It enables users to upload videos, which are then compressed and optimized for better performance.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Technologies Used**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Cloudinary**: Used for video upload, compression, and transformation.
+- **Prisma**: ORM to interact with the database and manage video metadata.
+- **Neon**: Cloud-based database solution for storing data.
+- **Clerk**: Used for user authentication and sign-up functionality.
+- **daisyUI**: A Tailwind CSS component library for UI styling.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **Features**
 
-## Learn More
+- **Video Upload**: Users can upload video files through a simple form.
+- **Compression**: The video is automatically compressed and optimized upon upload using Cloudinary.
+- **Video Transformations**: Cloudinary allows for easy transformations like resizing, cropping, and more.
+- **User Authentication**: Users can sign up and log in using Clerk for a secure authentication flow.
+- **Database Integration**: Video metadata is stored in a Neon database using Prisma for easy retrieval.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Getting Started**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To get this project running locally, follow these steps:
 
-## Deploy on Vercel
+### **Prerequisites**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you have the following installed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js
+- npm or yarn
+- A valid **Cloudinary** account and API keys
+- **Clerk** account and API keys
+- **Prisma** and **Neon** setup for the database
 
+### **Installation**
 
-###USING CLERK ->
-###Using daisyUI
-
-used clerk for sign up and prisma and neon for db connection
-http://localhost:3000/api/videos->postman initially []
-
-uploading video and image using cloudinary
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
